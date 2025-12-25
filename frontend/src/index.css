@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Asimovian&family=Audiowide&family=Baumans&family=Bruno+Ace&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Shade&family=Faster+One&family=Frijole&family=Iceberg&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Keyboard&family=Manrope:wght@200..800&family=Michroma&family=Mochiy+Pop+One&family=Mr+Dafoe&family=Nosifer&family=Nova+Oval&family=Offside&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rampart+One&family=Revalia&family=Rubik+Moonrocks&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Stalinist+One&family=Trade+Winds&family=Train+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Wallpoet&display=swap');
+
+@import "tailwindcss";
+
+
+@theme {
+    --font-poppins: "Poppins", "sans-serif";
+    --color-colors: #f00770;
+    --animate-aniVerts: aniVerts 4s ease-in-out infinite;
+
+
+    @keyframes aniVerts {
+        0% {
+            transform: translate(200px)
+        }
+
+        50% {
+
+            transform: translate(100px)
+        }
+
+        65% {
+
+            transform: translate(200px)
+        }
+
+        75% {
+            transform: scale(3)
+        }
+
+        100% {
+
+            transform: rotate(45deg)
+        }
+    }
+
+
+}
+
+
+
+@layer base {
+    ul {
+        @apply text-4xl text-shadow-amber-300 text-red-600
+    }
+}
+
+@layer components {
+    .btn {
+        @apply px-4 py-1 rounded bg-fuchsia-600
+    }
+
+    .h1 {
+        @apply font-[Poppins] uppercase font-bold text-8xl text-black/50 text-center
+    }
+}
+
+@layer utilities {
+    .para {}
+}
